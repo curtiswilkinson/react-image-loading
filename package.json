@@ -1,0 +1,61 @@
+{
+  "name": "react-collapsible-panel",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "author": "Curtis Wilkinson",
+  "license": "MIT",
+  "scripts": {
+    "start": "webpack-dev-server --port 8080",
+    "test": "jest"
+  },
+  "dependencies": {
+    "@types/enzyme": "^2.7.9",
+    "@types/jest": "^19.2.2",
+    "@types/react": "^15.0.22",
+    "autoprefixer": "^7.1.2",
+    "awesome-typescript-loader": "^3.2.1",
+    "babel-preset-es2015": "^6.24.1",
+    "case-sensitive-paths-webpack-plugin": "^2.1.1",
+    "dev": "^0.1.3",
+    "enzyme": "^2.8.2",
+    "html-webpack-plugin": "^2.29.0",
+    "jest": "^19.0.2",
+    "react": "^15.5.4",
+    "react-animate-height": "^0.9.1",
+    "react-dev-utils": "^3.0.2",
+    "react-dom": "^15.6.1",
+    "react-icons": "^2.2.3",
+    "react-test-renderer": "^15.5.4",
+    "tslint": "^5.1.0",
+    "tslint-loader": "^3.5.3",
+    "tslint-react": "^2.6.0",
+    "typescript": "^2.2.2",
+    "webpack": "^3.2.0",
+    "webpack-dev-server": "^2.5.1"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{ts,tsx}"
+    ],
+    "testPathIgnorePatterns": [
+      "<rootDir>[/\\\\](build|docs|node_modules|scripts)[/\\\\]"
+    ],
+    "testEnvironment": "node",
+    "testURL": "http://localhost",
+    "transform": {
+      "^.+\\.tsx?$": "<rootDir>/jest/typescript.js"
+    },
+    "transformIgnorePatterns": [
+      "[/\\\\]node_modules[/\\\\].+\\.(js|jsx)$"
+    ],
+    "moduleNameMapper": {
+      "^react-native$": "react-native-web"
+    },
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js"
+    ],
+    "testRegex": "(/__tests__/.*|\\.(test|spec))\\.(ts|tsx|js)$"
+  }
+}
